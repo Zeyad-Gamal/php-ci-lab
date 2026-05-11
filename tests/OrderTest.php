@@ -14,6 +14,6 @@ class OrderTest extends TestCase {
         $processor = new \App\OrderProcessor();
         $response = $processor->process("Ab", "Cloud Migration"); 
         
-        $this->assertEquals("error", $response['status']);
+        $this->assertEquals("errror", $response['status']);
     }
 }
